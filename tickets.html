@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Zoo Website-Tickets</title>
+    <script src="https://kit.fontawesome.com/77a0a9d83c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-section tickets-Limage">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="calander.html">Calander</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="space-taker">
+                <div class="tickets-section-text">
+                    <h1><span class="highlight">Tickets</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="tickets-parkinformation-section">
+            <div class="tickets-hoursection parkinformation-box">
+                <i class="far fa-clock fa-4x"></i>
+                <h1>Hours</h1>
+                <ul>
+                    <li>Monday through Friday: 9am to 5pm</li>
+                    <li>Saturday and Sunday: 10am to 6pm</li>
+                    <li>Not open on Holidays</li>
+                </ul>
+            </div>
+            <div class="tickets-parkingsection parkinformation-box">
+                <i class="fas fa-car fa-4x"></i>
+                <h1>Parking Rates</h1>
+                <ul>
+                    <li>Up to two hours: $20</li>
+                    <li>Two to four hours: $35</li>
+                    <li>Four or more hours:$50</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tickets-zootickets-section">
+            <form action="process.php" method="post">
+                <div class="tickets-row-1">
+                    <div class="zoo-tickets-kids ticket-select-box">
+                        <label for="kids_tickets">Kids</label>
+                        <p class="sm-text">(Under the age of 18)</p>
+                        <p>$20</p>
+                        <input type="number" name="ticket_number_kids" value="0" id="kids_tickets" min="0" />
+                    </div>
+                    <div class="zoo-tickets-adults ticket-select-box">
+                        <label for="adult-tickets">Adults</label>
+                        <p class="sm-text">(18 and older)</p>
+                        <p>$25</p>
+                        <input type="number" name="ticket_number_adults" value="0" id="adult_tickets" min="0" />
+                    </div>
+                    <div class="zoo-tickets-elderly ticket-select-box">
+                        <label for="elder_tickets">Elderly</label>
+                        <p class="sm-text">(65 and older)</p>
+                        <p>$20</p>
+                        <input type="number" name="ticket_number_elderly" value="0" id="elder_tickets" min="0" />
+                    </div>
+                </div>
+                <div class="tickets-row-2">
+                    <input type="submit" value="Buy" class="btn" />
+                </div>
+               
+
+            </form>
+        </div>
+
+        <div class="tickets-zootours-section">
+            <div class="zootours-image">
+                <img src="images/birdpic.jpg" />
+            </div>
+            <div class="zootours-description">
+                <div class="d-header"><h1>Zoo Tours</h1></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus orci et nibh porttitor mollis fermentum a elit. Curabitur ut orci vitae nisl suscipit scelerisque vel ut purus. Vivamus non porttitor orci. Nunc velit ligula, feugiat at blandit et, dapibus ac sem.</p>
+                <p id="special">$30 per person, counts as a ticket so no addition ticket purchase is necessary</p>
+            </div>
+            <div class="zootours-form">
+                <form>
+                    <input type="number" name="ticket_number_tour" value="0" class="number-input" min="0"/>
+                    <input type="submit" value="Buy" class="btn" />
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Aquarium &copy; 2022</p>
+        </footer>
+    </div>
+
+</body>
+</html>

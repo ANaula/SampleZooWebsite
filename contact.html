@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Zoo Website-Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-section contactus-Limage">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="calander.html">Calander</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="space-taker">
+                <div class="tickets-section-text">
+                    <h1><span class="highlight">Contact Us</span></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactus-content">
+
+            <div class="contactus-left">
+                <div class="contactus-blurb">
+                    <p>We appreciate any feedback you give us and we will make sure to respond to you in one to two weeks. </p>
+                </div>
+
+                <div class="contactus-form">
+                    <form action="process.php" method="post">
+                        <div class="FirstLastName-section contactform-section">
+                            <label for="firstlastname">First and Last name:</label>
+                            <input type="text" name="fullname" id="firstlastname" />
+                        </div>
+                        <div class="email-section contactform-section">
+                            <label for="email">Email:</label>
+                            <input type="email" name="Email" id="email" />
+                        </div>
+                        <div class="select-section contactform-section">
+                            <label for="select">Select Topic:</label>
+                            <select name="Topic">
+                                <option value="compliment">Compliment</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="ticket">Ticket Issue</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="other-section contactform-section">
+                            <label for="Other">If you selected "other" please clarify: </label>
+                            <input type="text" name="other-clarification" id="Other">
+                        </div>
+
+                        <div class="textbox-section contactform-section">
+                            <label for="textbox">Enter your message:</label>
+                            <textarea name="message" id="textbox" rows="10" cols="30"></textarea>
+                        </div>
+
+                        <div class="contactform-button">
+                            <input type="submit" value="Submit" class="btn" />
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="contactus-right">
+                <div class="contactus-image">
+                    <img src="images/contactus-image.jpg" alt="lemur" />
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p>Aquarium &copy; 2022</p>
+        </footer>
+    </div>
+
+</body>
+</html>
